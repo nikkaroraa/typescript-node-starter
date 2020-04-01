@@ -1,0 +1,31 @@
+{
+  "name": "typescript-node-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "https://github.com/iamoperand/typescript-node-starter",
+  "author": {
+    "name": "Nikhil Arora",
+    "email": "narora200@gmail.com"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.8",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
+}
